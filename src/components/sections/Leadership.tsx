@@ -67,7 +67,7 @@ function LeaderCard({ leader, index }: { leader: Leader; index: number }) {
         )}
 
         <div
-          className="absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-[0.52rem] tracking-[0.2em] uppercase px-3 py-1 border whitespace-nowrap"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-[0.52rem] tracking-[0.2em] uppercase px-3 py-1 border max-w-[90%] truncate text-center"
           style={{
             borderColor: leader.photo ? `rgba(255,255,255,0.5)` : `${leader.accent}40`,
             color: leader.photo ? `#fff` : leader.accent,
@@ -112,7 +112,7 @@ export default function Leadership() {
   const featured = leaders[0];
 
   return (
-    <section id="leadership" className="bg-deep px-10 md:px-16 py-28">
+    <section id="leadership" className="bg-deep px-6 md:px-10 lg:px-16 py-16 md:py-28">
       <div className="grid md:grid-cols-2 gap-10 items-end mb-16">
         <div>
           <motion.div
@@ -207,13 +207,13 @@ export default function Leadership() {
                 {featured.dept}
               </div>
             </div>
-            <div className="p-10">
+            <div className="p-6 md:p-10">
               <div className="font-mono text-[0.55rem] tracking-[0.3em] uppercase text-gold/60 mb-2">
                 // Head Pastor &amp; First Lady
               </div>
               <h3
                 className="font-display text-cream mb-2"
-                style={{ fontSize: "2.2rem", fontVariationSettings: '"wdth" 120' }}
+                style={{ fontSize: "clamp(1.5rem,4vw,2.2rem)", fontVariationSettings: '"wdth" 120' }}
               >
                 {featured.name}
               </h3>

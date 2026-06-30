@@ -9,7 +9,7 @@ export default function Youth() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="youth" className="relative bg-black px-10 md:px-16 py-28 overflow-hidden">
+    <section id="youth" className="relative bg-black px-6 md:px-10 lg:px-16 py-16 md:py-28 overflow-hidden">
       {/* BG text */}
       <div
         className="pointer-events-none select-none absolute font-display text-[22vw] text-ember/[0.04] whitespace-nowrap top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
@@ -18,7 +18,7 @@ export default function Youth() {
         YOUTH
       </div>
 
-      <div ref={ref} className="relative z-10 grid md:grid-cols-2 gap-20 items-center">
+      <div ref={ref} className="relative z-10 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         {/* Content */}
         <div>
           <motion.div
@@ -115,7 +115,7 @@ export default function Youth() {
             <div className="font-mono text-[0.55rem] uppercase tracking-[0.22em] text-ember mb-4">
               Our Teams
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {crTeams.map((team) => (
                 <div key={team} className="flex items-start gap-3 text-off text-[0.88rem] font-light">
                   <span className="mt-[6px] w-[5px] h-[5px] bg-ember flex-shrink-0" />

@@ -22,11 +22,11 @@ function EventCard({ event, index }: { event: EventItem; index: number }) {
       className={`group bg-card border border-gold/10 hover:border-gold/30 overflow-hidden transition-all duration-300 flex flex-col ${event.featured ? "md:row-span-2" : ""}`}
     >
       <div className="h-[3px] bg-gradient-to-r from-gold via-ember to-neon opacity-60 group-hover:opacity-100 transition-opacity" />
-      <div className="p-8 flex-1">
+      <div className="p-5 md:p-8 flex-1">
         <div className="flex items-baseline gap-4 mb-5">
           <span
             className="font-display text-gold leading-none"
-            style={{ fontSize: event.featured ? "4rem" : "3rem", fontVariationSettings: '"wdth" 140' }}
+            style={{ fontSize: event.featured ? "clamp(2.5rem,6vw,4rem)" : "clamp(2rem,5vw,3rem)", fontVariationSettings: '"wdth" 140' }}
           >
             {event.day}
           </span>
@@ -37,7 +37,7 @@ function EventCard({ event, index }: { event: EventItem; index: number }) {
         </span>
         <h3
           className="font-display text-cream mb-3"
-          style={{ fontSize: event.featured ? "2.2rem" : "1.6rem", fontVariationSettings: '"wdth" 115', lineHeight: 1 }}
+          style={{ fontSize: event.featured ? "clamp(1.5rem,3.5vw,2.2rem)" : "clamp(1.2rem,3vw,1.6rem)", fontVariationSettings: '"wdth" 115', lineHeight: 1 }}
         >
           {event.title}
         </h3>
@@ -49,7 +49,7 @@ function EventCard({ event, index }: { event: EventItem; index: number }) {
           <span>🕐 {event.time}</span>
         </div>
       </div>
-      <div className="px-8 py-4 border-t border-gold/8 flex justify-between items-center">
+      <div className="px-5 md:px-8 py-4 border-t border-gold/8 flex flex-wrap justify-between items-center gap-2">
         <a href="#connect" className="font-mono text-[0.58rem] tracking-[0.18em] uppercase text-gold flex items-center gap-2 group/l hover:gap-4 transition-all duration-200">
           {event.featured ? "Register Free" : "Attend"}
           <span className="transition-transform group-hover/l:translate-x-1">→</span>
@@ -66,7 +66,7 @@ export default function Events({ initialEvents }: { initialEvents: EventItem[] }
   const events = initialEvents.filter((e) => new Date(e.date) >= today);
 
   return (
-    <section id="events" className="bg-mid px-10 md:px-16 py-28">
+    <section id="events" className="bg-mid px-6 md:px-10 lg:px-16 py-16 md:py-28">
       <div className="mb-14">
         <div className="sec-label mb-4">What&apos;s On</div>
         <h2

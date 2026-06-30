@@ -28,12 +28,12 @@ function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 export default function About() {
   return (
-    <section id="about" className="px-10 md:px-16 py-28">
-      <div className="grid md:grid-cols-2 gap-20 items-center">
+    <section id="about" className="px-6 md:px-10 lg:px-16 py-16 md:py-28">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
 
         {/* Visual */}
         <Reveal>
-          <div className="relative min-h-[460px]">
+          <div className="relative min-h-[280px] md:min-h-[460px]">
             <div className="absolute left-0 top-0 h-[78%] w-[82%] overflow-hidden border border-black/10 bg-card shadow-[0_28px_70px_rgba(17,17,17,0.12)]">
               <Image
                 src="/images/church/R6II7788.jpg"
@@ -98,7 +98,7 @@ export default function About() {
             </p>
           </Reveal>
           <Reveal delay={0.32}>
-            <div className="grid grid-cols-3 gap-px mt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-px mt-2">
               {pillars.map(({ icon, name, desc }) => (
                 <div
                   key={name}

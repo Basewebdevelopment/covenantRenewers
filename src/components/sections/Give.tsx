@@ -91,7 +91,7 @@ export default function Give() {
     "w-full px-5 py-3.5 bg-white/[0.04] border border-gold/12 text-cream font-body text-[0.95rem] placeholder:text-off/40 focus:outline-none focus:border-gold/50 transition-colors";
 
   return (
-    <section id="give" className="relative bg-mid px-10 md:px-16 py-28 overflow-hidden">
+    <section id="give" className="relative bg-mid px-6 md:px-10 lg:px-16 py-16 md:py-28 overflow-hidden">
       {/* Decorative glow */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -144,7 +144,7 @@ export default function Give() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.28 }}
-          className="mb-12 border border-gold/15 p-6 flex items-center gap-6"
+          className="mb-12 border border-gold/15 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6"
           style={{ background: "linear-gradient(135deg, rgba(184,147,58,0.07), transparent)" }}
         >
           <span className="text-4xl flex-shrink-0">📖</span>
@@ -164,7 +164,7 @@ export default function Give() {
             initial={{ opacity: 0, y: 28 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="bg-card border border-gold/10 p-10 flex flex-col gap-8"
+            className="bg-card border border-gold/10 p-6 md:p-10 flex flex-col gap-8"
           >
             {done ? (
               <div className="flex flex-col items-center justify-center text-center py-10 gap-5 flex-1">
@@ -233,7 +233,7 @@ export default function Give() {
                   <div className="font-mono text-[0.56rem] tracking-[0.25em] uppercase text-off mb-3">
                     Choose a Fund
                   </div>
-                  <div className="grid grid-cols-2 gap-px">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-px">
                     {funds.map(({ id, icon, name, desc, accent }) => (
                       <button
                         key={id}
@@ -270,7 +270,7 @@ export default function Give() {
                   <div className="font-mono text-[0.56rem] tracking-[0.25em] uppercase text-off mb-3">
                     Amount
                   </div>
-                  <div className="grid grid-cols-3 gap-px mb-3">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-px mb-3">
                     {presets.map((p) => (
                       <button
                         key={p}
@@ -305,10 +305,10 @@ export default function Give() {
                 </div>
 
                 {/* Name fields */}
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <input className={inputCls} placeholder="First Name" />
                   <input className={inputCls} placeholder="Last Name" />
-                  <input className={`${inputCls} col-span-2`} type="email" placeholder="Email (for receipt)" />
+                  <input className={`${inputCls} sm:col-span-2`} type="email" placeholder="Email (for receipt)" />
                 </div>
 
                 {/* CTA */}

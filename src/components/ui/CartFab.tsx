@@ -106,7 +106,7 @@ export default function CartFab() {
       {/* FAB trigger */}
       <button
         onClick={() => setOpen(true)}
-        className="cart-pulse fixed bottom-8 right-8 z-[700] w-14 h-14 bg-ember flex items-center justify-center text-white text-xl font-bold transition-transform hover:scale-110"
+        className="cart-pulse fixed bottom-6 right-6 z-[700] w-14 h-14 bg-ember flex items-center justify-center text-white text-xl font-bold transition-transform hover:scale-110 [bottom:calc(1.5rem+env(safe-area-inset-bottom))]"
 
         aria-label="Open cart"
       >
@@ -191,8 +191,7 @@ export default function CartFab() {
                     <div className="flex items-center border border-black/15">
                       <button
                         onClick={() => updateQty(item.id, item.qty - 1)}
-                        className="w-7 h-7 flex items-center justify-center text-black/60 hover:text-black hover:bg-black/5 transition-colors font-mono text-sm"
-                
+                        className="w-10 h-10 flex items-center justify-center text-black/60 hover:text-black hover:bg-black/5 transition-colors font-mono text-sm"
                         aria-label="Decrease quantity"
                       >
                         −
@@ -202,8 +201,7 @@ export default function CartFab() {
                       </span>
                       <button
                         onClick={() => updateQty(item.id, item.qty + 1)}
-                        className="w-7 h-7 flex items-center justify-center text-black/60 hover:text-black hover:bg-black/5 transition-colors font-mono text-sm"
-                
+                        className="w-10 h-10 flex items-center justify-center text-black/60 hover:text-black hover:bg-black/5 transition-colors font-mono text-sm"
                         aria-label="Increase quantity"
                       >
                         +

@@ -38,8 +38,8 @@ export default function Footer() {
       className="border-t"
       style={{ backgroundColor: "#1a1610", borderColor: "rgba(184,147,58,0.12)" }}
     >
-      <div className="px-10 md:px-16 pt-16 pb-10">
-        <div className="grid md:grid-cols-[2.2fr_1fr_1fr_1fr] gap-12 mb-14">
+      <div className="px-6 md:px-10 lg:px-16 pt-12 md:pt-16 pb-10">
+        <div className="grid md:grid-cols-[2.2fr_1fr_1fr_1fr] gap-8 md:gap-12 mb-10 md:mb-14">
           {/* Brand */}
           <div>
             <div
@@ -83,8 +83,7 @@ export default function Footer() {
                   href="#"
                   className="w-9 h-9 flex items-center justify-center text-base transition-all duration-200"
                   style={{
-                    border: "1px solid rgba(184,147,58,0.2)",
-                    cursor: "none",
+                  border: "1px solid rgba(184,147,58,0.2)",
                   }}
                   aria-label="Social link"
                 >

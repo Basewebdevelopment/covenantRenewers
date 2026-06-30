@@ -121,7 +121,7 @@ export default function Hero() {
 
       {/* Brand accents */}
       <div
-        className="absolute right-0 top-0 h-full w-[28vw] min-w-[220px] pointer-events-none z-0"
+        className="absolute right-0 top-0 h-full w-[28vw] min-w-[80px] pointer-events-none z-0"
         style={{
           background: "linear-gradient(180deg, rgba(199,34,42,0.16), rgba(199,34,42,0.04))",
         }}

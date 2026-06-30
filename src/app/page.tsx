@@ -1,4 +1,3 @@
-import Cursor from "@/components/ui/Cursor";
 import Nav from "@/components/layout/Nav";
 import Hero from "@/components/sections/Hero";
 import Ticker from "@/components/ui/Ticker";
@@ -22,7 +21,6 @@ export default async function Home() {
 
   return (
     <CartProvider>
-      <Cursor />
       <ScrollExperience />
       <Nav />
       <main>

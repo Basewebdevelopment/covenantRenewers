@@ -69,7 +69,7 @@ export default function Departments() {
           </h2>
         </div>
 
-        <div className="relative border-l border-black/15 pl-6">
+        <div className="relative md:border-l border-black/15 md:pl-6">
           <p className="max-w-md text-base font-light leading-relaxed text-off">
             Whether you&apos;re visiting or already part of the church family, there is a
             place for you here. Explore the ministries of {replib.shortName} Birmingham.

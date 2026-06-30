@@ -97,7 +97,7 @@ export default function Nav() {
 
       {/* Mobile drawer */}
       <div
-        className={`mobile-menu fixed inset-0 z-[900] backdrop-blur-xl flex flex-col items-center justify-center gap-8 ${open ? "open" : ""}`}
+        className={`mobile-menu fixed inset-0 z-[900] backdrop-blur-xl flex flex-col items-center justify-center gap-6 sm:gap-8 overflow-y-auto py-20 ${open ? "open" : ""}`}
         style={{ backgroundColor: "rgba(17,13,10,0.98)" }}
       >
         <button
@@ -112,7 +112,7 @@ export default function Nav() {
             key={href}
             href={href}
             onClick={() => setOpen(false)}
-            className="mobile-nav-link font-display text-5xl tracking-wider uppercase transition-colors duration-200"
+            className="mobile-nav-link font-display text-4xl sm:text-5xl tracking-wider uppercase transition-colors duration-200"
             style={{ fontVariationSettings: '"wdth" 125' }}
           >
             {label}

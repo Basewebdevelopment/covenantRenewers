@@ -32,7 +32,6 @@ function ProductCard({
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.55, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="group relative flex flex-col overflow-hidden border border-black/10 bg-white hover:border-ember/35 hover:shadow-[0_16px_40px_rgba(17,17,17,0.09)] transition-all duration-300 hover:-translate-y-1"
-      style={{ cursor: "none" }}
     >
       {/* Badge */}
       {product.badge && (
@@ -195,13 +194,12 @@ export default function Store({ initialProducts }: { initialProducts: Product[] 
             transition={{ duration: 0.55, delay: 0.28 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <a href="/shop" className="btn-gold" style={{ cursor: "none" }}>
+            <a href="/shop" className="btn-gold">
               Open Shop
             </a>
             <a
               href="/shop"
               className="btn-ghost"
-              style={{ cursor: "none" }}
             >
               Browse All →
             </a>
@@ -230,7 +228,6 @@ export default function Store({ initialProducts }: { initialProducts: Product[] 
             <a
               href="/shop"
               className="inline-flex items-center gap-2 font-mono text-[0.52rem] uppercase tracking-[0.22em] text-black/45 hover:text-ember transition-colors duration-200"
-              style={{ cursor: "none" }}
             >
               +{Math.max(0, activeProducts.length - 3)} more products in the shop →
             </a>

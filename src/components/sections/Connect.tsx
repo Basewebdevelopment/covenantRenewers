@@ -48,7 +48,7 @@ export default function Connect() {
   const inputCls = "w-full px-5 py-3.5 bg-white/[0.04] border border-gold/12 text-cream font-body text-[0.95rem] placeholder:text-off/40 focus:outline-none focus:border-gold/50 transition-colors";
 
   return (
-    <section id="connect" className="relative bg-deep px-10 md:px-16 py-28 overflow-hidden">
+    <section id="connect" className="relative bg-deep px-6 md:px-10 lg:px-16 py-16 md:py-28 overflow-hidden">
       {/* Radial bg */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] pointer-events-none"
@@ -68,7 +68,7 @@ export default function Connect() {
           initial={{ opacity: 0, y: 28 }} animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display leading-[0.88] mb-6"
-          style={{ fontSize: "clamp(3.5rem,8vw,9rem)", fontVariationSettings: '"wdth" 130' }}
+          style={{ fontSize: "clamp(2.8rem,8vw,9rem)", fontVariationSettings: '"wdth" 130' }}
         >
           THIS IS
           <br />
@@ -105,7 +105,7 @@ export default function Connect() {
           {pathways.map(({ icon, title, desc, cta, href }) => (
             <div
               key={title}
-              className="group bg-card border border-gold/10 hover:border-gold/30 p-10 transition-all duration-300 relative overflow-hidden"
+              className="group bg-card border border-gold/10 hover:border-gold/30 p-6 md:p-10 transition-all duration-300 relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 right-0 h-px bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               <div className="text-3xl mb-5">{icon}</div>
@@ -151,10 +151,10 @@ export default function Connect() {
               <p className="text-off text-sm mt-2">We&apos;ll be in touch very soon.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <input className={inputCls} placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
               <input className={inputCls} placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-              <input className={`${inputCls} col-span-2`} type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className={`${inputCls} sm:col-span-2`} type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
               <input className={inputCls} type="tel" placeholder="Phone (optional)" value={phone} onChange={(e) => setPhone(e.target.value)} />
               <select
                 className={`${inputCls} text-off/60`}
@@ -169,12 +169,12 @@ export default function Connect() {
                 <option>Volunteering</option>
               </select>
               {error && (
-                <p className="col-span-2 font-mono text-[0.56rem] tracking-[0.14em] uppercase text-ember">{error}</p>
+                <p className="sm:col-span-2 font-mono text-[0.56rem] tracking-[0.14em] uppercase text-ember">{error}</p>
               )}
               <button
                 onClick={handleSubmit}
                 disabled={submitting}
-                className="col-span-2 py-4 bg-gold hover:bg-gold-bright text-black font-display tracking-[0.18em] uppercase transition-colors duration-200 mt-1 sheen relative overflow-hidden disabled:opacity-50"
+                className="sm:col-span-2 py-4 bg-gold hover:bg-gold-bright text-black font-display tracking-[0.18em] uppercase transition-colors duration-200 mt-1 sheen relative overflow-hidden disabled:opacity-50"
                 style={{ fontSize: "1rem", fontVariationSettings: '"wdth" 130' }}
               >
                 {submitting ? "Submitting..." : "Lock In — Join The Family"}
