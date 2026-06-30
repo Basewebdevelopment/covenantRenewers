@@ -1,0 +1,149 @@
+[
+  {
+    "id": "proverbs-oversized-tee",
+    "emoji": "✝",
+    "category": "Apparel",
+    "collection": "Proverbs 16:3",
+    "name": "Proverbs 16:3 Oversized Tee",
+    "description": "Oversized fit tee featuring Proverbs 16:3. Available in Cream, Washed Black, and Grey — made to be worn boldly, alive for Christ.",
+    "pricePence": 2999,
+    "currency": "GBP",
+    "badge": "NEW",
+    "badgeStyle": "bg-ember text-cream",
+    "wide": false,
+    "active": true,
+    "stock": 84,
+    "externalPriceId": "",
+    "bg": "#ffffff",
+    "images": [
+      {
+        "src": "/images/products/proverbs-cream-front.png",
+        "alt": "Cream Proverbs 16:3 oversized tee front",
+        "label": "Front",
+        "type": "flat"
+      },
+      {
+        "src": "/images/products/proverbs-cream-back.png",
+        "alt": "Cream Proverbs 16:3 oversized tee back",
+        "label": "Back",
+        "type": "flat"
+      }
+    ],
+    "variants": [
+      {
+        "id": "cream",
+        "name": "Cream",
+        "colorHex": "#e9dfcf",
+        "stock": 28,
+        "images": [
+          {
+            "src": "/images/products/proverbs-cream-front.png",
+            "alt": "Cream Proverbs 16:3 oversized tee front",
+            "label": "Front",
+            "type": "flat"
+          },
+          {
+            "src": "/images/products/proverbs-cream-back.png",
+            "alt": "Cream Proverbs 16:3 oversized tee back",
+            "label": "Back",
+            "type": "flat"
+          },
+          {
+            "src": "/images/products/models/proverbs-cream-model-front-male.png",
+            "alt": "Cream Proverbs tee worn — front view",
+            "label": "On model — front",
+            "type": "model"
+          },
+          {
+            "src": "/images/products/models/proverbs-cream-model-front-female.png",
+            "alt": "Cream Proverbs tee worn — styled front",
+            "label": "On model — styled",
+            "type": "model"
+          },
+          {
+            "src": "/images/products/models/proverbs-cream-model-back-male.png",
+            "alt": "Cream Proverbs tee worn — back graphic",
+            "label": "On model — back",
+            "type": "model"
+          }
+        ]
+      },
+      {
+        "id": "washed-black",
+        "name": "Washed Black",
+        "colorHex": "#2f2f2d",
+        "stock": 28,
+        "images": [
+          {
+            "src": "/images/products/proverbs-washed-black-front.png",
+            "alt": "Washed black Proverbs 16:3 oversized tee front",
+            "label": "Front",
+            "type": "flat"
+          },
+          {
+            "src": "/images/products/proverbs-washed-black-back.png",
+            "alt": "Washed black Proverbs 16:3 oversized tee back",
+            "label": "Back",
+            "type": "flat"
+          },
+          {
+            "src": "/images/products/proverbs-washed-black-back-wide.png",
+            "alt": "Washed black Proverbs 16:3 oversized tee alternate back",
+            "label": "Back detail",
+            "type": "detail"
+          },
+          {
+            "src": "/images/products/models/proverbs-washed-black-model-front-male.png",
+            "alt": "Washed black Proverbs tee worn — front view",
+            "label": "On model — front",
+            "type": "model"
+          },
+          {
+            "src": "/images/products/models/proverbs-washed-black-model-back-male.png",
+            "alt": "Washed black Proverbs tee worn — back graphic",
+            "label": "On model — back",
+            "type": "model"
+          },
+          {
+            "src": "/images/products/models/proverbs-washed-black-model-back-male-outdoor.png",
+            "alt": "Washed black Proverbs tee worn — back outdoor",
+            "label": "On model — back outdoor",
+            "type": "model"
+          }
+        ]
+      },
+      {
+        "id": "grey",
+        "name": "Grey",
+        "colorHex": "#94908c",
+        "stock": 28,
+        "images": [
+          {
+            "src": "/images/products/proverbs-grey-front.png",
+            "alt": "Grey Proverbs 16:3 oversized tee front",
+            "label": "Front",
+            "type": "flat"
+          },
+          {
+            "src": "/images/products/proverbs-grey-back.png",
+            "alt": "Grey Proverbs 16:3 oversized tee back",
+            "label": "Back",
+            "type": "flat"
+          },
+          {
+            "src": "/images/products/models/proverbs-washed-black-model-front-female.png",
+            "alt": "Grey Proverbs tee worn — front portrait",
+            "label": "On model — front",
+            "type": "model"
+          },
+          {
+            "src": "/images/products/models/proverbs-washed-black-model-back-female.png",
+            "alt": "Grey Proverbs tee worn — back styled",
+            "label": "On model — back",
+            "type": "model"
+          }
+        ]
+      }
+    ]
+  }
+]

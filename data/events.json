@@ -1,0 +1,72 @@
+[
+  {
+    "id": "annual-conference-2026",
+    "day": "22",
+    "month": "Jun 2026",
+    "date": "2026-06-22",
+    "cat": "special",
+    "catLabel": "Special Event",
+    "title": "CR Annual Conference 2026",
+    "location": "Birmingham City Centre",
+    "time": "10AM – 9PM",
+    "note": "🔥 142 spots left",
+    "detail": "Two days of worship, powerful ministry, world-class speakers, and a celebration of community. Our biggest event of the year.",
+    "featured": true
+  },
+  {
+    "id": "night-of-worship-3",
+    "day": "07",
+    "month": "Jun 2026",
+    "date": "2026-06-07",
+    "cat": "worship",
+    "catLabel": "Worship",
+    "title": "Night of Worship Vol.3",
+    "location": "CR Main Hall",
+    "time": "6:30 PM",
+    "note": "Open to All",
+    "detail": null,
+    "featured": false
+  },
+  {
+    "id": "youth-friday-jun",
+    "day": "13",
+    "month": "Jun 2026",
+    "date": "2026-06-13",
+    "cat": "youth",
+    "catLabel": "Youth",
+    "title": "CR Youth Friday Night",
+    "location": "Youth Hall",
+    "time": "7:00 PM",
+    "note": "Ages 13–25",
+    "detail": null,
+    "featured": false
+  },
+  {
+    "id": "food-drive-jun",
+    "day": "15",
+    "month": "Jun 2026",
+    "date": "2026-06-15",
+    "cat": "community",
+    "catLabel": "Community",
+    "title": "Community Food Drive",
+    "location": "Handsworth Park",
+    "time": "10:00 AM",
+    "note": "Volunteer",
+    "detail": null,
+    "featured": false
+  },
+  {
+    "id": "sunday-service-jun29",
+    "day": "29",
+    "month": "Jun 2026",
+    "date": "2026-06-29",
+    "cat": "worship",
+    "catLabel": "Worship",
+    "title": "Sunday Service — All Welcome",
+    "location": "CR Main Hall",
+    "time": "10:00 AM",
+    "note": "Every Sunday",
+    "detail": null,
+    "featured": false
+  }
+]
